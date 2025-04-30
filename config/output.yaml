@@ -1,0 +1,8 @@
+# Graphical output selection
+
+plot_melt_species: True
+plot_gas_species_wt: False
+plot_gas_species_mol: True
+
+plot_gas_fraction: True
+plot_fo2_dFMQ: False
