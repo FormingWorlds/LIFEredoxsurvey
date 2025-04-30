@@ -1,0 +1,14 @@
+# EVo
+FO2_start: -4
+FO2_stop: 4
+FO2_steps: 10
+
+ATOMIC_H_start: 100 # atomic c = 200; plots will show H/C fractions
+ATOMIC_H_stop: 600
+ATOMIC_H_steps: 10
+
+# AGNI
+AGNI_rootpath: "/dataserver/users/formingworlds/borgmann/AGNI"
+AGNI_outputpath: "/dataserver/users/formingworlds/borgmann/AGNI/out"
+SOCRATES_path: "/dataserver/users/formingworlds/borgmann/AGNI/usr/SOCRATES"
+REPO_path: "/Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey"

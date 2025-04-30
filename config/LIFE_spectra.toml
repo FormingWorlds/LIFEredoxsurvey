@@ -22,14 +22,14 @@ title = "LIFE_spectra"                       # Name for this configuration file
     wind_speed      = 2.0               # Effective wind speed for sensible heat [m s-1].
 
 [files]
-    input_sf        = "res/spectral_files/Frostflow/256/Frostflow.sf"   # Path to SOCRATES spectral file.
+    input_sf        = "res/spectral_files/Honeyside/256/Honeyside.sf"   # Path to SOCRATES spectral file.
     input_star      = "res/stellar_spectra/sun.txt"              # Path to stellar spectrum.
     output_dir      = "/dataserver/users/formingworlds/borgmann/AGNI/out"                                            # Path to output directory.
 
 [composition]
-    p_surf          = 1.0                     # Total surface pressure [bar].
+    p_surf          = 1.0                       # Total surface pressure [bar].
     p_top           = 1e-5                      # Total top-of-atmosphere pressure [bar].
-    vmr_dict        = {H2O = 0.1519712674879528, H2 = 3.228680880108691e-11, O2 = 0.03602806311487846, CO2 = 0.020511936298630216, CO = 6.463042901477881e-10, CH4 = 0.005251344267036784, SO2 = 0.1009007341020264, H2S = 0.024920946536123974, S2 = 0.001210864541668712} #{H2O = 0.677321414664592}
+    vmr_dict        = {H2O = 0.036179117384886224, H2 = 0.677321414664592, O2 = 4.895912375030067e-15, CO2 = 0.005783094467250954, CO = 0.2673756008646553, CH4 = 1.3589846090831264e-05, SO2 = 1.5468259619197373e-08, H2S = 0.008735546796533558, S2 = 9.403497825162163e-06, N2 = 0.004582217009901435} #{H2O = 0.677321414664592}
     vmr_path        = ""                        # Path to input volume mixing ratios. Not required if planet.vmr is passed.
     include_all     = false                     # Track extra gases, even when their mixing ratio is zero.
     chemistry       = 0                         # Chemistry type (see wiki).
@@ -66,7 +66,7 @@ title = "LIFE_spectra"                       # Name for this configuration file
     temperature     = false                     # Plot temperature profile?
     fluxes          = false                     # Plot fluxes?
     contribution    = false                     # Plot spectral contribution function?
-    emission        = true                      # Plot emission spectrum?
+    emission        = false                      # Plot emission spectrum?
     albedo          = false                     # Plot spectral albedo?
     mixing_ratios   = false                     # Plot mixing ratios?
     animate         = false                     # Make animation from runtime plots?
