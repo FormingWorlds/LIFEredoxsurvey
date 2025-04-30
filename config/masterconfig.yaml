@@ -1,3 +1,6 @@
+# path of the LIFEredoxsurvey repo
+REPO_path: "/Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey"
+
 # EVo
 FO2_start: -4
 FO2_stop: 4
@@ -11,4 +14,7 @@ ATOMIC_H_steps: 10
 AGNI_rootpath: "/dataserver/users/formingworlds/borgmann/AGNI"
 AGNI_outputpath: "/dataserver/users/formingworlds/borgmann/AGNI/out"
 SOCRATES_path: "/dataserver/users/formingworlds/borgmann/AGNI/usr/SOCRATES"
-REPO_path: "/Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey"
+
+
+# p-pop
+PPOP_rootpath: "/dataserver/users/formingworlds/borgmann/p-pop/P-pop"

@@ -1,8 +1,7 @@
 # output files
-output/AGNI/AGNI_spectra/*
-!output/AGNI/AGNI_spectra/.gitkeep
-output/AGNI/AGNI_textfiles/*
-!output/AGNI/AGNI_textfiles/.gitkeep
 output/*
-!output/.gitkeep
 !output/figures
+!output/AGNI
+output/AGNI/AGNI_spectra/*
+output/AGNI/AGNI_textfiles/*
+notebooks/__pycache__
