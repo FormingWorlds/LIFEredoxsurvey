@@ -22,40 +22,22 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
+
 # =============================================================================
 # IMPORTS
 # =============================================================================
 
 # Import your own catalogs, distributions and models here.
-import SystemGenerator
-from StarCatalogs import CrossfieldBrightSample,\
-                         ExoCat_1,\
-                         LTC_2,\
-                         LTC_3,\
-                         LTC_4
-from PlanetDistributions import Fressin2013,\
-                                Burke2015,\
-                                Dressing2015,\
-                                SAG13,\
-                                Weiss2018,\
-                                Weiss2018KDE,\
-                                HabitableNominal,\
-                                HabitablePessimistic,\
-                                Fernandes2019Symm,\
-                                Bryson2021Model1Hab2Low,\
-                                Bryson2021Model1Hab2High,\
-                                Bergsten2022
-from ScalingModels import BinarySuppression
-from MassModels import Chen2017
-from EccentricityModels import Circular
-from StabilityModels import He2019
-from OrbitModels import Quadrature,\
-                        Random
-from AlbedoModels import Uniform,\
-                         Constant
-from ExozodiModels import Ertel2018,\
-                          Ertel2020,\
-                          Median
+import SystemGenerator # type: ignore
+from StarCatalogs import CrossfieldBrightSample,ExoCat_1,LTC_2,LTC_3,LTC_4 # type: ignore
+from PlanetDistributions import Fressin2013,Burke2015, Dressing2015,SAG13,Weiss2018,Weiss2018KDE,HabitableNominal,HabitablePessimistic,Fernandes2019Symm,Bryson2021Model1Hab2Low,Bryson2021Model1Hab2High,Bergsten2022 # type: ignore
+from ScalingModels import BinarySuppression # type: ignore
+from MassModels import Chen2017 # type: ignore
+from EccentricityModels import Circular # type: ignore
+from StabilityModels import He2019 # type: ignore
+from OrbitModels import Quadrature,Random # type: ignore
+from AlbedoModels import Uniform,Constant # type: ignore
+from ExozodiModels import Ertel2018,Ertel2020,Median # type: ignore
 
 
 # =============================================================================
