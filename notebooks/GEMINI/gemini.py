@@ -134,6 +134,7 @@ filename = 'data.txt'
 file_path = os.path.join(output_directory, filename)
 with open(file_path, 'w') as file:
         writer = csv.writer(file)
+        writer.writerow(["Total SN:",SN])
         writer.writerow(['bins_snr_0','bins_snr_1','pflux'])
         for i in range(len(bins_snr[0])):
             string = [str(bins_snr[0][i]*1e6),str(bins_snr[1][i]),str(pflux[i])]
