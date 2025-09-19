@@ -5,3 +5,9 @@ output/*
 output/AGNI/AGNI_spectra/*
 output/AGNI/AGNI_textfiles/*
 notebooks/__pycache__
+!output/LIFEsim
+output/LIFEsim/cleanspectra/*
+output/LIFEsim/observed_spectra/*
+!output/ARCiS
+notebooks/ARCiS
+notebooks/ARCiS/*
