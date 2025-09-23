@@ -11,3 +11,4 @@ output/LIFEsim/observed_spectra/*
 !output/ARCiS
 notebooks/ARCiS
 notebooks/ARCiS/*
+output/ARCiS/input_spectra/*
