@@ -1,0 +1,155 @@
+H2O=1d-4
+H2=1d-4
+CO2=1d-4
+CO=1d-4
+SO2=1d-4
+H2S=1d-4
+S2=1d-4
+N2=1d-4
+O2=1d-4
+CH4=1d-4
+* set molecules you want to fit
+
+chemistry=.false.
+condensates=.false.
+
+free_tprofile=.true.
+freePT_fitT=.true.
+
+cia=.true.
+par_tprofile=.false.
+
+pmin=1d-9
+*which upper limit is sensible for our simulations
+*set to 1000 for test
+pmax=1000d0
+* could be lower, since our atmospheres are 1 bar by definition
+
+nr=50
+* number of pressure layers in atmosphere.
+
+*number of points in correlated k-tables
+ng=25
+*10 or 15 is also fine
+
+logemis=.false.
+
+scattering=.true.
+scattstar=.true.
+*scattered light, relevant for emission spectra
+
+Tstar=5777d0
+Rstar=1d0
+Dplanet=1d0
+distance=5
+* change distance.
+
+obs1:type="emis"
+obs1:file=output/ARCiS/input_spectra/textfiles/ARCiS_input_-4.0_0.5_5.txt
+*set in command line
+
+** setsurfP=.true. means abundances are partial pressures at the surface. 
+** setsurfP=.false. means abundances are relative abundances
+setsurfP=.false.
+
+
+fitpar:keyword="pmax"
+fitpar:min=1d-4
+fitpar:max=1d3
+fitpar:log=.true.
+
+** We need to change the ranges of all molecules to reflect partial pressures at the surface
+
+fitpar:keyword="H2O"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="H2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="CO2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="CO"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="SO2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="H2S"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="S2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="N2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="O2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="CH4"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="Rp"
+fitpar:min=0.010
+fitpar:max=0.200
+fitpar:log=.false.
+* jupiter radii
+
+fitpar:keyword="Mp"
+fitpar:min=0.001
+fitpar:max=0.006
+fitpar:log=.false.
+* jupiter masses
+
+fitpar:keyword="tprofile"
+nTpoints = 6
+* 3 is also fine
+Pref=0.1
+
+useobsgrid=.true.
+
+run3D=.true.
+night2day=1d0
+
+computeT=.false.
+
+cia1:file="/Users/users/borgmann/ARCiS/Data/CIA/CO2-CO2_combined.cia"
+cia2:file="/Users/users/borgmann/ARCiS/Data/CIA/N2-N2_ordered.cia"
+cia3:file="/Users/users/borgmann/ARCiS/Data/CIA/N2-H2O_2018.cia"
+cia4:file="/Users/users/borgmann/ARCiS/Data/CIA/CO2-CH4_2018.cia"
+cia5:file="/Users/users/borgmann/ARCiS/Data/CIA/CO2-H2_2018.cia"
+cia6:file="/Users/users/borgmann/ARCiS/Data/CIA/H2-CH4_eq_2011.cia"
+
+retrieval=.true.
+retrievaltype='MN'
+
+*MultiNest parameters
+*initial population setup, increase if some parameters don't converge
+*increase for more fit parameters
+npop=300
+*convergence criterion
+efr=0.2
+
+resume_nest=.false.
+* set to true if fit crashes or something and you want to resume

@@ -1,14 +1,19 @@
 # output files
 output/*
 !output/figures
+notebooks/__pycache__
+
 !output/AGNI
 output/AGNI/AGNI_spectra/*
 output/AGNI/AGNI_textfiles/*
-notebooks/__pycache__
+output/AGNI/raw/*
+
 !output/LIFEsim
 output/LIFEsim/cleanspectra/*
 output/LIFEsim/observed_spectra/*
+
 !output/ARCiS
 notebooks/ARCiS
 notebooks/ARCiS/*
 output/ARCiS/input_spectra/*
+output/ARCiS/retrievals/*

@@ -29,10 +29,10 @@ title = "LIFE_spectra"                       # Name for this configuration file
 [composition]
     p_surf          = 1.0                       # Total surface pressure [bar].
     p_top           = 1e-5                      # Total top-of-atmosphere pressure [bar].
-    vmr_dict        = {H2O = 0.2785273722372222, H2 = 0.014094623350727059, O2 = 6.70094616178484e-10, CO2 = 0.14782817735411308, CO = 0.01847427751358458, CH4 = 1.0990724396861423e-12, SO2 = 0.3096981501072833, H2S = 0.026591536292426023, S2 = 0.20122352891640988, N2 = 0.003562333557040296} #{H2O = 0.677321414664592}
+    vmr_dict        = {H2O = 0.6763984726585083, H2 = 0.0753981095753346, O2 = 1.3809935073196397e-10, CO2 = 0.05100485623227479, CO = 0.014040869875827458, CH4 = 5.265493484597872e-11, SO2 = 0.03622268568678161, H2S = 0.08073036932514521, S2 = 0.06481146183914341, N2 = 0.0013931746162300653} #{H2O = 0.677321414664592}
     vmr_path        = ""                        # Path to input volume mixing ratios. Not required if planet.vmr is passed.
     include_all     = false                     # Track extra gases, even when their mixing ratio is zero.
-    chemistry       = 0                         # Chemistry type (see wiki).
+    chemistry       = 1                         # Chemistry type (see wiki).
     condensates     = []                        # List of volatiles which are allowed to condense.
 
 [execution]

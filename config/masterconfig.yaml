@@ -15,6 +15,8 @@ AGNI_rootpath: "/dataserver/users/formingworlds/borgmann/AGNI"
 AGNI_outputpath: "/dataserver/users/formingworlds/borgmann/AGNI/out"
 SOCRATES_path: "/dataserver/users/formingworlds/borgmann/AGNI/usr/SOCRATES"
 
+# fastchem
+fastchem_rootpath: "/dataserver/users/formingworlds/borgmann/fastchem"
 
 # p-pop
 PPOP_rootpath: "/dataserver/users/formingworlds/borgmann/p-pop/P-pop"
