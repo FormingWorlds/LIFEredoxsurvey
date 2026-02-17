@@ -9,7 +9,7 @@ output/AGNI/AGNI_textfiles/*
 output/AGNI/raw/*
 
 !output/LIFEsim
-output/LIFEsim/cleanspectra/*
+output/LIFEsim/clean_spectra/*
 output/LIFEsim/observed_spectra/*
 
 !output/ARCiS
