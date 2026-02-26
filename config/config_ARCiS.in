@@ -1,13 +1,18 @@
-H2O=1d-4
-H2=1d-4
-CO2=1d-4
-CO=1d-4
-SO2=1d-4
-H2S=1d-4
-S2=1d-4
 N2=1d-4
-O2=1d-4
+CO=1d-4
+H2=1d-4
 CH4=1d-4
+H2S=1d-4
+*S2=1d-4
+SO2=1d-4
+H2O=1d-4
+CO2=1d-4
+O2=1d-4
+*H2SO4=1d-4
+SO=1d-4
+NH3=1d-4
+OCS=1d-4
+*S8=1d-4
 * set molecules you want to fit
 
 chemistry=.false.
@@ -60,17 +65,7 @@ fitpar:log=.true.
 
 ** We need to change the ranges of all molecules to reflect partial pressures at the surface
 
-fitpar:keyword="H2O"
-fitpar:min=1d-9
-fitpar:max=1d3
-fitpar:log=.true.
-
-fitpar:keyword="H2"
-fitpar:min=1d-9
-fitpar:max=1d3
-fitpar:log=.true.
-
-fitpar:keyword="CO2"
+fitpar:keyword="N2"
 fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
@@ -80,7 +75,12 @@ fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
 
-fitpar:keyword="SO2"
+fitpar:keyword="H2"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="CH4"
 fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
@@ -90,12 +90,17 @@ fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
 
-fitpar:keyword="S2"
+fitpar:keyword="SO2"
 fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
 
-fitpar:keyword="N2"
+fitpar:keyword="H2O"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="CO2"
 fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
@@ -105,7 +110,17 @@ fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
 
-fitpar:keyword="CH4"
+fitpar:keyword="SO"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="NH3"
+fitpar:min=1d-9
+fitpar:max=1d3
+fitpar:log=.true.
+
+fitpar:keyword="OCS"
 fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
@@ -147,9 +162,9 @@ retrievaltype='MN'
 *MultiNest parameters
 *initial population setup, increase if some parameters don't converge
 *increase for more fit parameters
-npop=300
+npop=600
 *convergence criterion
-efr=0.2
+efr=0.8
 
 resume_nest=.false.
 * set to true if fit crashes or something and you want to resume
