@@ -113,7 +113,7 @@ block = False
 # Select a name for the output planet population table and how many universes
 # should be simulated.
 Name = 'planet_population' # str
-Nuniverses = 10 # int
+Nuniverses = 1 # int
 
 
 # =============================================================================
