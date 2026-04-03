@@ -22,7 +22,7 @@ title = "LIFE_spectra"                       # Name for this configuration file
     wind_speed      = 2.0               # Effective wind speed for sensible heat [m s-1].
 
 [files]
-    input_sf        = "res/spectral_files/Honeyside/256/Honeyside.sf"   # Path to SOCRATES spectral file.
+    input_sf        = "res/spectral_files/Honeyside/4096/Honeyside.sf"   # Path to SOCRATES spectral file.
     input_star      = "res/stellar_spectra/sun.txt"              # Path to stellar spectrum.
     output_dir      = "/dataserver/users/formingworlds/borgmann/AGNI/out"                                            # Path to output directory.
 
