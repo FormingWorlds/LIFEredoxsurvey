@@ -11,9 +11,12 @@ output/AGNI/raw/*
 !output/LIFEsim
 output/LIFEsim/clean_spectra/*
 output/LIFEsim/observed_spectra/*
+output/LIFEsim/observed_spectra_with_ARCiS/*
+!output/LIFEsim/observed_spectra_with_ARCiS
 
 !output/ARCiS
 notebooks/ARCiS
 notebooks/ARCiS/*
 output/ARCiS/input_spectra/*
 output/ARCiS/retrievals/*
+
