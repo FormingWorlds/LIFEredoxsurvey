@@ -7,12 +7,8 @@ S2=0d0
 SO2=0d0
 H2O=0d0
 CO2=0d0
-O2=0d0
-H2SO4=0d0
-SO=0d0
 NH3=0d0
 OCS=0d0
-*S8=0d0
 
 
 Rp=0.089d0

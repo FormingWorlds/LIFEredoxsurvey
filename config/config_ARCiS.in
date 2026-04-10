@@ -3,13 +3,13 @@ CO=1d-4
 H2=1d-4
 CH4=1d-4
 H2S=1d-4
-*S2=1d-4
+S2=1d-4
 SO2=1d-4
 H2O=1d-4
 CO2=1d-4
-O2=1d-4
+*O2=1d-4
 *H2SO4=1d-4
-SO=1d-4
+*SO=1d-4
 NH3=1d-4
 OCS=1d-4
 *S8=1d-4
@@ -101,16 +101,6 @@ fitpar:max=1d3
 fitpar:log=.true.
 
 fitpar:keyword="CO2"
-fitpar:min=1d-9
-fitpar:max=1d3
-fitpar:log=.true.
-
-fitpar:keyword="O2"
-fitpar:min=1d-9
-fitpar:max=1d3
-fitpar:log=.true.
-
-fitpar:keyword="SO"
 fitpar:min=1d-9
 fitpar:max=1d3
 fitpar:log=.true.
