@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir -p output
+module unload ARCiS
+module load ARCiS
+module unload cfitsio
+module load cfitsio
+ARCiS /Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey/config/config_ARCiS.in -o output -s obs1:file=input -s distance=5"

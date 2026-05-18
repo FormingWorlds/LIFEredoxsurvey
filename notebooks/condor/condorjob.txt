@@ -1,0 +1,7 @@
+getenv       = True
+Executable   = condorjob
+Universe     = vanilla 
+output       = /dataserver/users/formingworlds/borgmann/ARCiS_retrievals/-4.0_0.1_10_350/
+input        = /Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey/output/ARCiS/forwardmodel_ARCiS/textfiles/ARCiS_fm_input_-4.0_0.1_5_350.txt
+Requirements = (Machine == "norma2.intra.astro.rug.nl")
+request_cpus   = 8

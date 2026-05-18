@@ -3,7 +3,7 @@ CO=1d-4
 H2=1d-4
 CH4=1d-4
 H2S=1d-4
-S2=1d-4
+*S2=1d-4
 SO2=1d-4
 H2O=1d-4
 CO2=1d-4
@@ -34,7 +34,7 @@ nr=50
 * number of pressure layers in atmosphere.
 
 *number of points in correlated k-tables
-ng=25
+ng=10
 *10 or 15 is also fine
 
 logemis=.false.
@@ -128,7 +128,7 @@ fitpar:log=.false.
 * jupiter masses
 
 fitpar:keyword="tprofile"
-nTpoints = 6
+nTpoints = 4
 * 3 is also fine
 Pref=0.1
 
