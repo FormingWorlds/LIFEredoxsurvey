@@ -7,7 +7,7 @@ config/masterconfig.yaml also lets you define major input settings that are used
 --Workflow--
 1. EVo_run.ipynb - This uses the EVo package written by Pip Liggins to simulate atmospheres. The masterconfig file defines what fo2 and C/H values are used to generate the atmospheres. This in turn determines how many different atmospheres are generates (default value 12). chem.yaml, env.yaml and output.yaml are also used by EVo, but you shouldn't have to change anything in here.
 2. agni_run.ipynb - This part of the pipeline has deprecated in a weird way. AGNI was used in the past as the forward model (and also applies FastChem in the process). The forward model was later changed to ARCiS. However, AGNI is still run to apply FastChem. This means a bunch of compute power is wasted on running AGNI while you could just only use FastChem instead. I didn't get around to changing this. So now only the atmospheric contents from AGNI are used.
-3. 
+3. ARCiS_forward_model.ipynb - This takes the AGNI atmospheric compositions and generates emission spectra. Note that observing distance is an important input here (default = 5, 10, 15, 20 pc). I do all ARCiS runs on an external computer cluster (referred to as norma2 in the code) through SSH. This is because (especially the retrievals) can take very long. You will probably have to slightly rewrite this code to have it run on whatever machine you want.
 
 --Extra notebooks--
 In the Extra folder there are two notebooks, p-pop_run.ipynb and PT_profiles.ipynb. These notebooks are not used for the thesis. The PT profiles provide extra insight but were not discussed in the thesis. p-pop is called in survey.ipynb and it is not necessary to run p-pop_run.ipynb first. The notebooks outputs some extra interesting images.

@@ -22,5 +22,10 @@ output/ARCiS/input_spectra/*
 output/ARCiS/retrievals/*
 output/ARCiS/forwardmodel_ARCiS/*
 
+!output/AGNI_atmospherecomposition
+!output/AGNI_atmospherecomposition_normalized
+!output/atmospheres_weight.csv
+!output/atmospheres_mole.csv
+
 
 
