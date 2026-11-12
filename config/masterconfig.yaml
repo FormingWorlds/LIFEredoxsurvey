@@ -2,11 +2,13 @@
 REPO_path: "/Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey"
 
 # EVo
+# Define the fo2 parameters you want as inputs
 FO2_start: -4
 FO2_stop: 4
 FO2_steps: 4
 
-ATOMIC_H_start: 100 # atomic c = 200; plots will show C/H fractions
+# Define the C/H ratios you want as inputs by changing H amount
+ATOMIC_H_start: 100 # atomic C = 200; plots will show C/H fractions
 ATOMIC_H_stop: 600
 ATOMIC_H_steps: 4
 
