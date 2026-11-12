@@ -5,7 +5,7 @@
 title = "LIFE_spectra"                       # Name for this configuration file
 
 [planet]
-    tmp_surf        = 1000            # Surface temperature [kelvin].
+    tmp_surf        = 288.15            # Surface temperature [kelvin].
     instellation    = 1370.0           # Stellar flux at planet's orbital distance [W m-2].
     albedo_b        = 0.306              # Pseudo bond-albedo which downscales the stellar flux by 1-this_value.
     s0_fact         = 0.6652            # Stellar flux scale factor which accounts for planetary rotation (c.f. Cronin+13).
@@ -29,7 +29,7 @@ title = "LIFE_spectra"                       # Name for this configuration file
 [composition]
     p_surf          = 1.0                       # Total surface pressure [bar].
     p_top           = 1e-5                      # Total top-of-atmosphere pressure [bar].
-    vmr_dict        = {H2O = 0.10966249611487115, H2 = 0.00531964881121576, O2 = 7.29218442636639e-10, CO2 = 0.19840216798058494, CO = 0.023768178298888408, CH4 = 1.930869705437905e-13, SO2 = 0.38459558972702107, H2S = 0.011452942747874976, S2 = 0.26203970854055814, N2 = 0.004759267049573928} #{H2O = 0.677321414664592}
+    vmr_dict        = {H2O = 0.0951493268481531, H2 = 0.722683941234702, O2 = 2.974554606276959e-14, CO2 = 0.007910644729631704, CO = 0.14838131402260152, CH4 = 3.4832529836465135e-06, SO2 = 2.2812042671695406e-07, H2S = 0.022624453899472433, S2 = 5.540618585006588e-05, N2 = 0.003191201706148915} #{H2O = 0.677321414664592}
     vmr_path        = ""                        # Path to input volume mixing ratios. Not required if planet.vmr is passed.
     include_all     = false                     # Track extra gases, even when their mixing ratio is zero.
     chemistry       = 1                         # Chemistry type (see wiki).

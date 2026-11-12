@@ -2,6 +2,7 @@
 output/*
 !output/figures
 notebooks/__pycache__
+notebooks/Extra/__pycache__
 
 !output/AGNI
 output/AGNI/AGNI_spectra/*

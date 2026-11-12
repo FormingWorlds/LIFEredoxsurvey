@@ -1,6 +1,10 @@
 # path of the LIFEredoxsurvey repo
 REPO_path: "/Users/users/borgmann/Documents/masterproject/LIFEredoxsurvey"
 
+# Especially the ARCiS files get huge, close to 100 GBs.
+# I don't want to save this in the repo, so I save it to a data server
+dataserver_path: "/dataserver/users/formingworlds/borgmann"
+
 # EVo
 # Define the fo2 parameters you want as inputs
 FO2_start: -4
@@ -17,6 +21,8 @@ AGNI_rootpath: "/dataserver/users/formingworlds/borgmann/AGNI"
 AGNI_outputpath: "/dataserver/users/formingworlds/borgmann/AGNI/out"
 SOCRATES_path: "/dataserver/users/formingworlds/borgmann/AGNI/usr/SOCRATES"
 
+# if True, dumps all raw AGNI data to BIGDATA_path. Not necessary, but is useful for tracking bugs
+AGNI_DUMP_RAW: True
 # fastchem
 fastchem_rootpath: "/dataserver/users/formingworlds/borgmann/fastchem"
 
