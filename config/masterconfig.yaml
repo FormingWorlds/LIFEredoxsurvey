@@ -27,7 +27,10 @@ AGNI_DUMP_RAW: True
 fastchem_rootpath: "/dataserver/users/formingworlds/borgmann/fastchem"
 
 # ARCiS
-observingdistances: [5, 10, 15, 20] # also used in LIFEsim
+observingdistances: [5, 10, 15, 20]
+
+# LIFEsim
+integrationtime: 1261440 # seconds
 
 # p-pop
 PPOP_rootpath: "/dataserver/users/formingworlds/borgmann/p-pop/P-pop"
