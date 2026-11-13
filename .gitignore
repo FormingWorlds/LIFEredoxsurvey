@@ -10,6 +10,8 @@ output/AGNI/AGNI_textfiles/*
 output/AGNI/raw/*
 
 !output/LIFEsim/
+output/LIFEsim/observed_spectra_with_ARCiS/
+
 !output/LIFEsim/clean_spectra/
 !output/LIFEsim/clean_spectra/images/
 !output/LIFEsim/clean_spectra/textfiles/
@@ -26,12 +28,18 @@ output/LIFEsim/observed_spectra/textfiles/*
 !output/LIFEsim/observed_spectra/images/.gitkeep
 !output/LIFEsim/observed_spectra/textfiles/.gitkeep
 
+
+
 !output/ARCiS
-notebooks/ARCiS
-notebooks/ARCiS/*
-output/ARCiS/input_spectra/*
-output/ARCiS/retrievals/*
-output/ARCiS/forwardmodel_ARCiS/*
+output/ARCiS/forwardmodel_ARCiS/
+
+!output/ARCiS/input_spectra/
+!output/ARCiS/input_spectra/figures/
+!output/ARCiS/input_spectra/textfiles/
+output/ARCiS/input_spectra/figures/*
+output/ARCiS/input_spectra/textfiles/*
+!output/ARCiS/input_spectra/figures/.gitkeep
+!output/ARCiS/input_spectra/textfiles/.gitkeep
 
 !output/AGNI_atmospherecomposition
 !output/AGNI_atmospherecomposition_normalized

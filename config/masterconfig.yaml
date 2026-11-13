@@ -30,7 +30,7 @@ fastchem_rootpath: "/dataserver/users/formingworlds/borgmann/fastchem"
 observingdistances: [5, 10, 15, 20]
 
 # LIFEsim
-integrationtime: 1261440 # seconds
+integrationtimes: [36000,1261440] # seconds
 
 # p-pop
 PPOP_rootpath: "/dataserver/users/formingworlds/borgmann/p-pop/P-pop"
