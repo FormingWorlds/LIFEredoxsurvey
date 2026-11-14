@@ -11,7 +11,7 @@ config/masterconfig.yaml also lets you define major input settings that are used
 4. LIFEsim_run.ipynb - This takes the emission spectra from the ARCiS forward models and simulates the observatinos with the LIFE telescope. I use a subprocess prompt to activate a virtual environment specifically for running LIFEsim. You probably have to change these lines if you want to use this code. 
 5. ARCiS_run.ipynb - This prepares the ARCiS input files used for the retrievals. The clean data from the ARCiS forward model needs to be combined with the noise output from LIFEsim.
 6. retrievals.ipynb - This is a bit of a tricky file. The retrievals are initiated here. For me each run took at least a week of runtime. Because of this I run all of them in tmux panes so they don't get interrupted. I also use SSH here a lot to connect to the Kapteyn cluster. You will have to change these lines to match the machine you want to run on. I also manually define all the init_lists here, it's not automated.
-7. survey.ipynb - 
+7. survey.ipynb - This is where the LR model is trained and where the full-scale survey is simulated. You can choose C/H, the redox-age model, number of repetitions N and realistic/flat age distribution. It will output N_succes.
 
 --Extra notebooks--
 In the Extra folder there are two notebooks, p-pop_run.ipynb and PT_profiles.ipynb. These notebooks are not used for the thesis. The PT profiles provide extra insight but were not discussed in the thesis. p-pop is called in survey.ipynb and it is not necessary to run p-pop_run.ipynb first. The notebooks outputs some extra interesting images.
